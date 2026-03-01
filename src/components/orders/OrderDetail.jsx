@@ -100,20 +100,12 @@ export default function OrderDetail({ order, onClose, onUpdated }) {
               </p>
             </div>
             <div>
-<<<<<<< HEAD
                <p className="text-xs text-slate-400 uppercase font-semibold mb-1">Totals</p>
                <p className="text-sm text-slate-600">Subtotal: ${(order.subtotal || 0).toFixed(2)}</p>
                <p className="text-sm text-slate-600">Tax: ${(order.tax_amount || 0).toFixed(2)}</p>
                <p className="text-sm text-slate-600">Shipping: ${(order.shipping_amount || 0).toFixed(2)}</p>
                <p className="text-sm font-bold text-slate-900">Total: ${(order.total_amount || 0).toFixed(2)}</p>
              </div>
-=======
-              <p className="text-xs text-slate-400 uppercase font-semibold mb-1">Totals</p>
-              <p className="text-sm text-slate-600">Subtotal: ${(order.subtotal || 0).toFixed(2)}</p>
-              <p className="text-sm text-slate-600">Tax: ${(order.tax_amount || 0).toFixed(2)}</p>
-              <p className="text-sm font-bold text-slate-900">Total: ${(order.total_amount || 0).toFixed(2)}</p>
-            </div>
->>>>>>> 89eb7d08da8a98d4cd68825c8bbd02ab4af85a7e
           </div>
 
           {/* Items */}
