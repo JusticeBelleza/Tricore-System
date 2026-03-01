@@ -30,12 +30,11 @@ Deno.serve(async (req) => {
       return Response.json({ error: 'User was registered but could not be found.' }, { status: 500 });
     }
 
-    // 3. Update user info and role
-    await base44.asServiceRole.entities.User.update(newUser.id, {
-      role,
-      phone,
-      address,
-    });
+    // 3. Update role using caller's admin token (only platform/admin users can change roles)
+    await base44.entities.User.update(newUser.id, { role });
+
+    // 4. Update other fields using service role
+    await base44.asServiceRole.entities.User.update(newUser.id, { phone, address });
 
     // If driver, create a Driver entity record too
     if (role === 'driver') {
