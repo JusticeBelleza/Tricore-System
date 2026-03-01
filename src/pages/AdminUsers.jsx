@@ -231,7 +231,10 @@ export default function AdminUsers() {
                     <th className="text-left px-6 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider">Linked User</th>
                     <th className="text-left px-6 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider">Credit Limit</th>
                     <th className="text-left px-6 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider">Balance</th>
+<<<<<<< HEAD
                     <th className="text-left px-6 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider">Shipping Fee</th>
+=======
+>>>>>>> 89eb7d08da8a98d4cd68825c8bbd02ab4af85a7e
                     <th className="text-left px-6 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider">Tax Exempt</th>
                     <th className="text-left px-6 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider">Status</th>
                     <th className="px-6 py-3"></th>
@@ -277,6 +280,7 @@ export default function AdminUsers() {
                             ${(company.outstanding_balance || 0).toLocaleString()}
                           </span>
                         </td>
+<<<<<<< HEAD
                         <td className="px-6 py-4">
                           <div className="flex items-center gap-2">
                             <span className="text-sm text-slate-600">Shipping:</span>
@@ -294,6 +298,8 @@ export default function AdminUsers() {
                             <span className="text-sm text-slate-400">$</span>
                           </div>
                         </td>
+=======
+>>>>>>> 89eb7d08da8a98d4cd68825c8bbd02ab4af85a7e
                         <td className="px-6 py-4 text-sm text-slate-600">{company.tax_exempt ? "✓ Exempt" : "—"}</td>
                         <td className="px-6 py-4">
                           <span className={`text-xs font-medium px-2 py-1 rounded-full capitalize ${statusColor[company.status] || "bg-slate-100 text-slate-600"}`}>
